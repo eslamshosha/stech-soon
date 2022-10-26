@@ -1,0 +1,55 @@
+@font-face {
+  font-family: "SSTArabic";
+  src: url("../webfonts//Montserrat/Montserrat-Arabic-Regular.woff2") format("woff2"),
+    url("../webfonts/Montserrat/Montserrat-Arabic-Regular.woff") format("woff"),
+    url("../webfonts/Montserrat/Montserrat-Arabic-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+body {
+  font-family: "Montserrat";
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+}
+:root {
+  --main-color: #808080;
+}
+.comming-cont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  height: 100vh;
+}
+.comming-logo {
+  width: 100%;
+  margin-bottom: 35px;
+  max-width: 232px;
+}
+.comming-logo img {
+  margin: 0 auto;
+}
+.comming-title {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--main-color);
+  margin: 0;
+}
+@media (max-width: 767px) {
+  .comming-cont {
+    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
+  }
+  .comming-logo {
+    max-width: 200px;
+}
+}
